@@ -51,9 +51,10 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
-#    'zhihuuser.middlewares.ZhihuuserSpiderMiddleware': 543,
-#}
+SPIDER_MIDDLEWARES = {
+    'zhihuuser.middlewares.ProxyMiddleWare':540,
+   'zhihuuser.middlewares.ZhihuuserSpiderMiddleware': 543,
+}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
